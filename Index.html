@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+    <div class="head"><span>Code Editor</span><button id="reset" value="reset">RESET</button><button id="download" value="download">DOWNLOAD</button></div>
+    <div class="editor-container">
+        <div class="pannels">
+            <label for="htmlcode"><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="htmlcode" placeholder="HTML Code" spellcheck="false"></textarea>
+            <label for="csscode"><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="csscode" placeholder="CSS Code" spellcheck="false"></textarea>
+            <label for="jscode"><i class="fa-brands fa-js"></i> Javascript</label>
+            <textarea id="jscode" placeholder="JAVASCRIPT Code" spellcheck="false"></textarea>
+        </div>
+
+        <iframe id="output"></iframe>
+        <script src="javascript.js"></script>
+    </div>
+    
+</body>
+</html>
